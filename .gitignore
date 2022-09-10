@@ -1,0 +1,8 @@
+.vs
+.visualgdb
+
+build
+out
+
+*.old
+*.vgdbcmake.*.user
