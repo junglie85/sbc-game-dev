@@ -32,6 +32,7 @@
     <RelativeSourceDirectory />
     <ConfigurationType>DEBUG</ConfigurationType>
     <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
+    <MainCMakeTarget>HelloLenna</MainCMakeTarget>
     <MakeCommandTemplate>
       <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
       <RemoteHost>
@@ -39,6 +40,7 @@
         <Transport>BuiltinShortcut</Transport>
       </RemoteHost>
       <Command>$(VISUALGDB_DIR)/ninja.exe</Command>
+      <Arguments />
       <WorkingDirectory>$(BuildDir)</WorkingDirectory>
       <BackgroundMode xsi:nil="true" />
     </MakeCommandTemplate>
@@ -73,13 +75,14 @@
         <FoldSingleItemPathLevels>true</FoldSingleItemPathLevels>
       </ProjectItemSettings>
       <TargetSpecificSettings />
-      <DeploymentDirectory>/tmp/$(ProjectDirUnixStyle)</DeploymentDirectory>
+      <DeploymentDirectory>/tmp</DeploymentDirectory>
       <SetLDLibraryPathFromDependentArtifacts>true</SetLDLibraryPathFromDependentArtifacts>
-      <ProjectGUID>55613a4e-f03c-43a5-b58f-41f79762bce4</ProjectGUID>
+      <ProjectGUID>84d7aa3a-2382-4bd9-9eb2-47b64387cd50</ProjectGUID>
       <VirtualFolders />
       <ConfigurationNameCase>Upper</ConfigurationNameCase>
       <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
       <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
+      <StartupTarget>HelloLenna</StartupTarget>
     </ProjectModeSettings>
   </Build>
   <CustomBuild>
@@ -93,13 +96,14 @@
           <Transport>SSH</Transport>
           <UserName>pi</UserName>
         </RemoteHost>
-        <LocalDirectory>$(ProjectDir)\..\Assets</LocalDirectory>
-        <RemoteDirectory>/tmp/$(ProjectDirUnixStyle)/Assets</RemoteDirectory>
+        <LocalDirectory>$(ProjectDir)/Assets</LocalDirectory>
+        <RemoteDirectory>/tmp/Assets</RemoteDirectory>
         <FileMasks>
           <string>*</string>
         </FileMasks>
         <TransferNewFilesOnly>true</TransferNewFilesOnly>
         <IncludeSubdirectories>true</IncludeSubdirectories>
+        <SelectedDirectories />
         <DeleteDisappearedFiles>false</DeleteDisappearedFiles>
         <ApplyGlobalExclusionList>true</ApplyGlobalExclusionList>
         <Extension>
