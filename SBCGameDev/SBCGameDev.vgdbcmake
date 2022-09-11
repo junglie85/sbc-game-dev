@@ -32,7 +32,7 @@
     <RelativeSourceDirectory />
     <ConfigurationType>DEBUG</ConfigurationType>
     <BinaryDirectory>build/$(PlatformName)/$(ConfigurationName)</BinaryDirectory>
-    <MainCMakeTarget>HelloLenna</MainCMakeTarget>
+    <MainCMakeTarget>PhotoFrame</MainCMakeTarget>
     <MakeCommandTemplate>
       <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
       <RemoteHost>
@@ -82,7 +82,7 @@
       <ConfigurationNameCase>Upper</ConfigurationNameCase>
       <DefaultHeaderDiscoveryMode>None</DefaultHeaderDiscoveryMode>
       <EnableFastUpToDateCheck>true</EnableFastUpToDateCheck>
-      <StartupTarget>HelloLenna</StartupTarget>
+      <StartupTarget>PhotoFrame</StartupTarget>
     </ProjectModeSettings>
   </Build>
   <CustomBuild>
