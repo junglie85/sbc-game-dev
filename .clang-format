@@ -1,5 +1,7 @@
 ---
-BasedOnStyle: WebKit
-ColumnLimit: 99
-IndentWidth: 4
-PointerAlignment: Left
+BasedOnStyle: webkit
+ColumnLimit: 120
+AllowShortBlocksOnASingleLine: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+AllowShortIfStatementsOnASingleLine: true
+AlignConsecutiveAssignments: true

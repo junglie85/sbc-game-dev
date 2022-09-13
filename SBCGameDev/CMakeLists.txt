@@ -16,5 +16,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_subdirectory(HelloTriangle)
 add_subdirectory(HelloLenna)
 add_subdirectory(PhotoFrame)
+add_subdirectory(DoubleBuffer)
 
 add_subdirectory(ThirdParty)
